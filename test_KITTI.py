@@ -158,7 +158,8 @@ if __name__ == '__main__':
         format="")
     logging.getLogger().addHandler(logging.StreamHandler(sys.stdout)) 
     
-    config_path = f'snapshot/{args.chosen_snapshot}/config.json'
+    # config_path = f'snapshot/{args.chosen_snapshot}/config.json'
+    onfig_path = f'snapshot/PointDSC_KITTI_release/config.json'
     config = json.load(open(config_path, 'r'))
     config = edict(config)
 
