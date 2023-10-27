@@ -191,7 +191,8 @@ if __name__ == '__main__':
             k=config.k,
             nms_radius=config.inlier_threshold,
             )
-    miss = model.load_state_dict(torch.load(f'snapshot/{args.chosen_snapshot}/models/model_best.pkl'), strict=False)
+    # miss = model.load_state_dict(torch.load(f'snapshot/{args.chosen_snapshot}/models/model_best.pkl'), strict=False)
+    miss = model.load_state_dict(torch.load(f'snapshot/PointDSC_KITTI_release/models/model_best.pkl'), strict=False)
     print(miss)
     model.eval()
 
